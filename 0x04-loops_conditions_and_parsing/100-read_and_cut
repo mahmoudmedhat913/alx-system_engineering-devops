@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# display the contant of /etc/passwd
+input="/etc/passwd"
+while IFS= read -r line
+do
+	echo "$line" | cut -d':' --fields=1,2,3
+done < "$input"
