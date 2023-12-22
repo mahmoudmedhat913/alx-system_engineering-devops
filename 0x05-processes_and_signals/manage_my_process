@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#proccess
+file="/tmp/my_proccess"
+while true; do
+	echo "I am alive!" >> "$file"
+	sleep 2
+done
