@@ -32,7 +32,7 @@ int main(void)
 		if (!pid)
 			break;
 		printf("Zombie process created, PID: %i\n", (int)pid);
-		childre++;
+		children++;
 	}
 	if (pid != 0)
 		infinite_while();
