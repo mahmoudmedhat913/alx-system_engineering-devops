@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#stop infinity and beyond
+kill "$(ps -x | pgrep -f beyond)"
