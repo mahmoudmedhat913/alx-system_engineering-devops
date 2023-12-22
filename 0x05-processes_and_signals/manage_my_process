@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #proccess
-file="/tmp/my_proccess"
+file="/tmp/my_process"
 while true; do
 	echo "I am alive!" >> "$file"
 	sleep 2
