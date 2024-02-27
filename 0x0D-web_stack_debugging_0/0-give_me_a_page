@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# run apache
+
+echo "ServerName localhost" >> /etc/apache2.cinf
+service apache2 start
