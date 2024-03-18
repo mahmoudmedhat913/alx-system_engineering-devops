@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# config
+# configure
 
 sudo apt install ufw
 sudo ufw default deny incoming
