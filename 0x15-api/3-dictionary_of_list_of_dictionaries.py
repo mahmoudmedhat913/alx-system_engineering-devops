@@ -21,7 +21,7 @@ if __name__ == "__main__":
                             "task": task.get('title'),
                             "completed": task.get('completed')}
                 taskList.append(taskDict)
-    todoAll[user.get('id')] = taskList
+        todoAll[user.get('id')] = taskList
 
     with open('todo_all_employees.json', mode='w') as f:
         json.dump(todoAll, f)
