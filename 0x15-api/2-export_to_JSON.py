@@ -22,8 +22,8 @@ if __name__ == "__main__":
                         "completed": task.get('completed'),
                         "username": user.json().get('username')}
             taskList.append(taskDict)
-    todouser[userId] = taskList
+    todoUser[userId] = taskList
 
-    filename = UserId + '.json'
+    filename = userId + '.json'
     with open(filename, mode='w') as f:
         json.dump(todoUser, f)
