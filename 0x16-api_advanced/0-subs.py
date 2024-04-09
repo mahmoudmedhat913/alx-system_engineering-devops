@@ -6,7 +6,6 @@ import requests
 def number_of_subscribers(subreddit):
     """function that queries the Reddit API
     and returns the number of subscribers"""
-
     if subreddit is None or type(subreddit) is not str:
         return 0
 
@@ -17,4 +16,5 @@ def number_of_subscribers(subreddit):
     if r.get('data') is None:
         return 0
     
-    return r.get('data').get('subscribers')
+    subscribers = r.get('data').get('subscribers')
+    return subscribers
